@@ -52,14 +52,17 @@ function Chutar(){
     document.getElementById("valor").value = "";
 }
 
-//Atrelando a tecla Enter com o botão de Chutar
-var inputChute = document.getElementById("valor");
-inputChute.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    document.getElementById("chutarBot").click();
-  }
-});
+//Tecla Enter para apertar o botão de Chutar
+function pressionandoEnter(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('chutarBot').click();
+        return false;
+    }
+    return true;
+}
 
 //Sorteando um número aleatório
 var numSecreto = parseInt(Math.random() * 11) 
