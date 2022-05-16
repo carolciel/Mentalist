@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      
+      <title>
+        Mentalista
+      </title>
+
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+        
+          <div class="dicas">
+              <p>Dicas? 💡</p>
+              <label class="switch">
+              <input type="checkbox" id="dica" onclick="validar()">
+              <span class="slider round"></span>
+              </label>
+          </div>
+
+          <br>
+          <h1 class="page-title">Mentalista   </h1>
+          <h2 class="descricao" id="descricao">Descubra em 3 tentativas qual o número secreto
+          </h2>
+              <p class="page-subtitle">Digite um número de 0 a 10</p>
+          <form>
+              <input type="number" id="valor"/><br>
+          </form>
+
+          <div class="botoes">
+              <button type="submit" id="chutarBot"onclick="Chutar()">Chutar</button>
+              <button type="button" id="rejogarBot" onClick="tentarDeNovo()" disabled>Jogar Novamente</button>
+          </div>
+
+          <h2 class="resultado" id="resultado"></h2>
+        
+          <p class="tentativas" id="tentativas"></p>
+        
+        
+      </div>
+    
+   
+    
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      </a>
+      
+  </body>
+
+</html>
